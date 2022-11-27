@@ -5,6 +5,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 80rem;
   .container {
     display: flex;
@@ -87,6 +88,81 @@
       }
     }
   }
+  @media (max-width: 1280px) {
+    padding-top: 8rem;
+  }
+  @media (max-width: 1200px) {
+    padding-bottom: 8rem;
+    height: auto;
+    .container {
+      .left {
+        max-width: 64rem;
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      .right {
+        top: 0;
+        max-width: 35.3rem;
+        button {
+          height: 19.7rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 6rem 0;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      .left {
+        text-align: center;
+        .value {
+          justify-content: center;
+        }
+      }
+      .right {
+        text-align: center;
+        button {
+          margin-bottom: 3rem;
+        }
+        .age {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+    .container {
+      .left {
+        h1 {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-size: 1.4rem;
+          max-width: 80%;
+          margin: 0 auto 2rem;
+        }
+        .value {
+          flex-direction: column;
+        }
+      }
+      .right {
+        max-width: 31rem;
+        button {
+          height: 17.7rem;
+        }
+        .age {
+          p {
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-info-geral {
@@ -111,6 +187,29 @@
           font-size: 1.6rem;
           line-height: 160%;
           color: #bdc2cb;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 4rem 0;
+    height: auto;
+    .container {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .container {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        li {
+          span {
+            max-width: 14.5rem;
+          }
         }
       }
     }
@@ -156,6 +255,56 @@
     left: 11rem;
     top: -4.5rem;
   }
+  @media (max-width: 1200px) {
+    background-image: none;
+    padding: 6rem 0;
+    height: auto;
+    .container {
+      flex-direction: column-reverse;
+    }
+    .left {
+      max-width: 100%;
+      text-align: center;
+      .subtitle {
+        justify-content: center;
+      }
+      h2 {
+        max-width: 75%;
+        margin: 2rem auto;
+      }
+      .corp {
+        justify-content: center;
+      }
+    }
+    .kratos-atreus {
+      left: 0;
+      top: 0;
+      margin-bottom: 6rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .left {
+      h2 {
+        max-width: 95%;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+    .left {
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+      }
+      .corp {
+        flex-direction: column;
+        gap: 3rem;
+      }
+    }
+    .kratos-atreus {
+      margin-bottom: 4rem;
+    }
+  }
 }
 
 .s-characteres {
@@ -190,6 +339,59 @@
           margin-top: 2.2rem;
         }
       }
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 6rem 0;
+    .description {
+      flex-direction: column;
+      align-items: center;
+      .left {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+        .subtitle {
+          justify-content: center;
+        }
+        h2 {
+          max-width: 75%;
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .description {
+      .left {
+        h2 {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+    .description {
+      .left {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      .right {
+        flex-direction: column;
+        align-items: center;
+        .text {
+          img {
+            margin: 0 auto;
+          }
+          span {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .slide-characteres {
+      margin-top: 4rem;
     }
   }
 }

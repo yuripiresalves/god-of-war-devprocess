@@ -4,6 +4,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #000000;
+
   .container {
     display: flex;
     align-items: center;
@@ -34,6 +35,24 @@ header {
           font-weight: 600;
           font-size: 1.4rem;
           line-height: 1.5rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 760px) {
+    height: 7rem;
+    .logos {
+      .sony {
+        display: none;
+      }
+      .logo {
+        max-width: 14rem;
+      }
+    }
+    .container {
+      .platform {
+        span {
+          display: none;
         }
       }
     }
